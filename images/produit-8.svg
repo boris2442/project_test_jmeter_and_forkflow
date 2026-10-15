@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#DFF6F5"/>
+  <rect x="230" y="170" width="340" height="430" rx="40" fill="#54C7C0"/>
+  <rect x="285" y="130" width="230" height="90" rx="18" fill="#1BA8A0"/>
+  <rect x="315" y="260" width="170" height="160" rx="16" fill="#BEEFEA"/>
+  <circle cx="400" cy="390" r="50" fill="#68D5C9"/>
+  <text x="400" y="660" text-anchor="middle" font-size="48" font-family="Segoe UI, sans-serif" fill="#1C1E21">Power Bank</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#F2F5F8"/>
+  <path d="M220 560 L280 220 L520 220 L580 560 L220 560 Z" fill="#87B4D8"/>
+  <path d="M300 260 L355 220 L445 220 L500 260 L300 260 Z" fill="#BEE2F5"/>
+  <rect x="260" y="300" width="280" height="170" rx="22" fill="#D7EFF8"/>
+  <rect x="315" y="350" width="170" height="90" rx="15" fill="#6DA8C8"/>
+  <text x="400" y="650" text-anchor="middle" font-size="48" font-family="Segoe UI, sans-serif" fill="#1C1E21">Sac</text>
+</svg>

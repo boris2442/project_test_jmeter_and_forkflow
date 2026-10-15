@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#EAF4EA"/>
+  <rect x="150" y="220" width="500" height="280" rx="28" fill="#5ABF7E"/>
+  <rect x="200" y="260" width="400" height="200" rx="18" fill="#DFF7E5"/>
+  <rect x="230" y="300" width="90" height="120" rx="16" fill="#79D59B"/>
+  <rect x="350" y="300" width="90" height="120" rx="16" fill="#79D59B"/>
+  <rect x="470" y="300" width="90" height="120" rx="16" fill="#79D59B"/>
+  <text x="400" y="635" text-anchor="middle" font-size="48" font-family="Segoe UI, sans-serif" fill="#1C1E21">Clavier</text>
+</svg>

@@ -13,6 +13,7 @@ MiniShop est une boutique e-commerce pédagogique développée en PHP natif, Jav
 - `includes/footer.php` : pied de page partagé.
 - `assets/css/style.css` : design responsif.
 - `assets/js/app.js` : interactions JavaScript.
+- `sw.js` et `offline.html` : cache applicatif et page de secours hors ligne.
 - `database.sql` : schéma MySQL et données de démonstration.
 
 ## Prérequis
@@ -54,7 +55,13 @@ MiniShop est une boutique e-commerce pédagogique développée en PHP natif, Jav
 - Les transactions MySQL protègent la cohérence des commandes.
 - Les actions modifiant le panier ou les commandes nécessitent un token CSRF.
 
-## Prochaine étape
+## Utilisation hors ligne
 
-Ce projet est prêt pour la suite technique (tests de charge avec JMeter, Service Worker, synchronisation hors ligne), sans introduire ces fonctionnalités pour l'instant.
+Ouvrez le site sous `http://localhost/...` ou en HTTPS : les Service Workers ne fonctionnent pas depuis une URL `file://`. Après un premier chargement connecté, l'application met en cache ses ressources, les images du catalogue et les pages d'accueil et du panier. Si une fiche produit n'a pas été mise en cache, son ouverture hors ligne renvoie vers le catalogue disponible hors ligne.
+
+Les ajouts, changements de quantité et suppressions sont conservés dans le navigateur sans connexion. Quand le réseau revient, le panier complet est envoyé au serveur puis validé avec les stocks et les produits disponibles. Une erreur de synchronisation est affichée et le panier local est conservé pour permettre une nouvelle tentative.
+
+La création de commande nécessite toujours une connexion : le prix et le stock sont revérifiés côté serveur avant validation. Les données hors ligne sont propres au navigateur et à son stockage local ; elles ne doivent pas être considérées comme une commande confirmée.
+
+Si l'application a déjà été ouverte avant l'installation de cette version, rechargez une fois la page avec une connexion afin d'activer le nouveau Service Worker et de mettre à jour les ressources en cache. Une première visite sans réseau ne peut pas installer l'application ni télécharger le catalogue.
 # project_test_jmeter_and_forkflow

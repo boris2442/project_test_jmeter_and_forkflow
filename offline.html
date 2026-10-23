@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="">
+    <title>Panier hors ligne - MiniShop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.php" class="brand">MiniShop</a>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="index.php">Accueil</a>
+                <a href="panier.php">Panier</a>
+            </nav>
+            <a href="panier.php" class="cart-link" aria-label="Voir le panier">
+                <span aria-hidden="true">🛒</span>
+                <span>Panier</span>
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div id="flash-message" class="flash-message" aria-live="polite" style="display: none;"></div>
+    <main class="page-shell">
+        <div class="container">
+            <section class="page-header">
+                <h1 class="page-heading">Mon panier</h1>
+            </section>
+            <div id="cart-page" data-cart-page data-order-token="">
+                <div id="cart-page-content"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>MiniShop — Vous êtes hors ligne.</p>
+        </div>
+    </footer>
+    <script src="assets/js/app.js?v=4"></script>
+</body>
+</html>

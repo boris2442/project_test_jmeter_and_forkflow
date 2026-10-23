@@ -1,0 +1,31 @@
+git init
+git status
+git branch
+git add .
+git commit -m
+git log //see historics
+ git diff id
+
+ git reset --hard id // entrer en version
+
+
+ les strategies de branche git hub
+
+ comment vous implementez votre strategie de branche? 
+
+ Kubernetes: 
+
+ Repertoires : Main / Master
+
+ soit le projet calculator: 
+
+ ## designer ux : master ---->release
+
+
+creer une branche feature--add-numbers (add 2 numbers) elle sera creer en se basant sur main... elle a tout le code de la branche main et ces ajours .. Apres avoir tester, il vont renvoyer plus haut sur la branche main/ master en faisant un merge
+
+une branche de deploiement
+
+le merge consiste a renvoyer le code sur la branche master
+
+un realsese pour envoyer le branche au client 

@@ -72,7 +72,17 @@ include __DIR__ . '/includes/header.php';
 
                     <div class="product-actions">
                         <a class="secondary-btn" href="details.php?id=<?php echo (int) $product['id']; ?>">Voir les détails</a>
-                        <button class="primary-btn" type="button" data-add-to-cart data-product-id="<?php echo (int) $product['id']; ?>" data-quantity="1">
+                        <button
+                            class="primary-btn"
+                            type="button"
+                            data-add-to-cart
+                            data-product-id="<?php echo (int) $product['id']; ?>"
+                            data-quantity="1"
+                            data-product-name="<?php echo htmlspecialchars($product['nom'], ENT_QUOTES, 'UTF-8'); ?>"
+                            data-product-price="<?php echo (float) $product['prix']; ?>"
+                            data-product-image="<?php echo htmlspecialchars($product['image'], ENT_QUOTES, 'UTF-8'); ?>"
+                            data-product-stock="<?php echo (int) $product['stock']; ?>"
+                        >
                             Ajouter au panier
                         </button>
                     </div>
